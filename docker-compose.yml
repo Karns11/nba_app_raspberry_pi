@@ -77,10 +77,10 @@ services:
     command: >
       bash -lc 'streamlit run /opt/airflow/app/app.py
         --server.address=0.0.0.0
-        --server.port=8501
+        --server.port=8502
         --server.runOnSave=true'
     ports:
-      - "8501:8501"
+      - "8502:8501"
     environment:
       PGHOST: ${PG_HOST}
       PGPORT: ${PG_PORT}

@@ -17,6 +17,7 @@ dag = DAG(
     description='Run NBA data pipeline daily to feed v2 app',
     schedule_interval='0 13 * * *',
     start_date=datetime(2024, 2, 3),
+    end_date=datetime(2026, 6, 30), 
     catchup=False
 )
 

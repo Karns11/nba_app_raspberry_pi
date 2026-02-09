@@ -42,7 +42,7 @@ on.exit(dbDisconnect(con))
 cat("Ensuring table schema exists...\n")
 
 # Drop the old table if it exists with wrong schema
-# dbExecute(con, "DROP TABLE IF EXISTS raw.nba_player_game_logs;")
+dbExecute(con, "DROP TABLE IF EXISTS raw.nba_player_game_logs;")
 
 create_table_sql <- "
 CREATE TABLE IF NOT EXISTS raw.nba_player_game_logs (
